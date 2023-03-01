@@ -39,5 +39,9 @@ describe("Primer Reto", () => {
     cy.wait(1500);
     cy.get("#salary").should("be.visible").clear().type("500000");
     cy.get("#submit").should("be.visible").click();
+
+    // borrando el campo
+    cy.wait(2000);
+    cy.get("#delete-record-2").should("be.visible").click();
   });
 }); //  Cierre del describe

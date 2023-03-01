@@ -1,5 +1,7 @@
 /// <reference types="Cypress" />
 
+// ! use npm cypress open to run tests
+
 Cypress.on("uncaught:exception", (err, runnable) => {
   return false;
 });
